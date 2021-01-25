@@ -3,12 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Starter Project</title>
+  <title>dev.Finances$ | Controle Financeiro</title>
   <%= htmlWebpackPlugin.tags.headTags %>
 </head>
 <body>
-  <h1>Welcome</h1>
-  <small>Project started</small>
+  <header class="header">
+    <h1 class="header__brand">Dev.<strong>Finance</strong><span>$</span></h1>
+  </header>
+
+  <main class="container">
+    <section class="balance">
+      <h2 class="balance__title">Balanço</h2>
+      <div class="balance__card">
+        <h3 class="card__title">Entradas</h3>
+        <p class="card__values">R$ 6.000,00</p>
+      </div>
+      <div class="balance__card">
+        <h3 class="card__title">Saídas</h3>
+        <p class="card__values">R$ 2.000,00</p>
+      </div>
+      <div class="balance__card">
+        <h3 class="card__title">Total</h3>
+        <p class="card__values">R$ 6.000,00</p>
+      </div>
+    </section>
+    <section class="transactions">
+      <h2 class="transactions__title">Transações</h2>
+      <table id="data-table">
+        <thead>
+          <tr>
+            <th>Descrição</th>
+            <th>Valor</th>
+            <th>Data</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Luz</td>
+            <td>R$ 250,00</td>
+            <td>25/01/2021</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="copy">dev.finance$</p>
+  </footer>
+  
   <%= htmlWebpackPlugin.tags.bodyTags %>
 </body>
 </html>
