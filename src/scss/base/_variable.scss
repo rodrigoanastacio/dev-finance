@@ -1,1 +1,25 @@
-$body-bg: #f1f1f1;
+// Colors
+$darkBlue: hsl(233, 26%, 24%);
+$limeGreen: hsl(136, 65%, 51%);
+$brightCyan: hsl(192, 70%, 51%);
+$grayishBlue: hsl(233, 8%, 62%);
+$lightGrayishBlue: hsl(220, 16%, 96%);
+$veryLightGray: hsl(0, 0%, 98%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 10%);
+$yellow: hsl(40, 100%, 70%);
+
+// Fonts
+$font_poppins: "Poppins", Sans-serif;
+
+$font_main: $font_poppins;
+
+// Font Sizes
+$font-sm: 0.875rem; // 14px
+$font-md: 1.125rem; // 18px
+
+$body-bg: lightGrayishBlue;
+$bg_header: $limeGreen;
+
+// Path
+$path-font: "../fonts/" !default;

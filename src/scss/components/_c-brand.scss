@@ -1,0 +1,11 @@
+.c-brand {
+  
+  color: $black;
+  font-weight: 100;
+
+  > span {
+    color: $yellow;
+    font-weight: bold;
+  }
+
+}

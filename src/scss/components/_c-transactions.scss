@@ -1,0 +1,28 @@
+.c-transactions {
+  margin-bottom: 3rem;
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+
+  @extend .c-table;
+
+  &__title {
+    margin-bottom: 1.5625rem;
+  }
+
+  &__button {
+    padding: 0.9375rem 0;
+    display: inline-block;
+    transition: all 0.2s ease-in;
+    
+    &:hover {
+      opacity: 0.5;
+    }
+
+    &--new {
+      color: $limeGreen;
+    }
+
+  }
+
+}

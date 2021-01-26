@@ -1,0 +1,31 @@
+.container {
+  // width: #{min(90vw, 800px)};
+  max-width: 50rem;
+  padding: 0 15px; 
+  margin: auto;
+}
+
+// CSS Trick for screen reader
+.u-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.u-title {
+  color: $darkBlue;
+}
+
+.u-bg-bright-cyan {
+  background-color: $brightCyan !important;
+}
+
+.u-bg-lime-green {
+  background-color: $limeGreen !important;
+}

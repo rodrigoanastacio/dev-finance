@@ -1,0 +1,16 @@
+.c-balance {
+  
+  margin-top: -8rem;
+  margin-bottom: 3rem;
+
+  @media (min-width: 800px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  &__title {
+    margin-bottom: 1.5625rem;
+  }
+
+}

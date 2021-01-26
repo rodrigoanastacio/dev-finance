@@ -7,41 +7,67 @@
   <%= htmlWebpackPlugin.tags.headTags %>
 </head>
 <body>
-  <header class="header">
-    <h1 class="header__brand">Dev.<strong>Finance</strong><span>$</span></h1>
+  <header class="l-header">
+    <h1 class="c-brand">Dev.<strong>Finance</strong><span>$</span></h1>
   </header>
 
   <main class="container">
-    <section class="balance">
-      <h2 class="balance__title">Balanço</h2>
-      <div class="balance__card">
-        <h3 class="card__title">Entradas</h3>
-        <p class="card__values">R$ 6.000,00</p>
+    <section class="c-balance">
+      <h2 class="c-balance__title u-title u-sr-only">Balanço</h2>
+      <div class="c-card">
+        <h3 class="c-card__title">
+          <span>Entradas</span>
+          <img src="images/income.svg" alt="Imagem de entradas">
+        </h3>
+        <p class="c-card__values">R$ 6.000,00</p>
       </div>
-      <div class="balance__card">
-        <h3 class="card__title">Saídas</h3>
-        <p class="card__values">R$ 2.000,00</p>
+      <div class="c-card">
+        <h3 class="c-card__title">
+          <span>Saídas</span>
+          <img src="images/expense.svg" alt="Imagem de saídas">
+        </h3>
+        <p class="c-card__values">R$ 2.000,00</p>
       </div>
-      <div class="balance__card">
-        <h3 class="card__title">Total</h3>
-        <p class="card__values">R$ 6.000,00</p>
+      <div class="c-card u-bg-lime-green">
+        <h3 class="c-card__title">
+          <span>Total</span>
+          <img src="images/total.svg" alt="Imagem de total">
+        </h3>
+        <p class="c-card__values">R$ 6.000,00</p>
       </div>
     </section>
-    <section class="transactions">
-      <h2 class="transactions__title">Transações</h2>
-      <table id="data-table">
+    <section class="c-transactions">
+      <h2 class="c-transactions__title u-title u-sr-only">Transações</h2>
+
+      <a href="#" class="c-transactions__button c-transactions__button--new">+ Nova Transação</a>
+
+      <table class="c-table">
         <thead>
           <tr>
             <th>Descrição</th>
             <th>Valor</th>
             <th>Data</th>
+            <th></th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Luz</td>
-            <td>R$ 250,00</td>
+            <td>- R$ 250,00</td>
             <td>25/01/2021</td>
+            <td><img src="images/minus.svg" alt="Remover transação"></td>
+          </tr>
+          <tr>
+            <td>Água</td>
+            <td>- R$ 70,00</td>
+            <td>25/01/2021</td>
+            <td><img src="images/minus.svg" alt="Remover transação"></td>
+          </tr>
+          <tr>
+            <td>Desenvolvimento de site</td>
+            <td>R$ 3.000,00</td>
+            <td>25/01/2021</td>
+            <td><img src="images/minus.svg" alt="Remover transação"></td>
           </tr>
         </tbody>
       </table>
@@ -51,7 +77,7 @@
   <footer class="footer">
     <p class="copy">dev.finance$</p>
   </footer>
-  
+
   <%= htmlWebpackPlugin.tags.bodyTags %>
 </body>
 </html>
