@@ -1,7 +1,7 @@
 .container {
   // width: #{min(90vw, 800px)};
   max-width: 50rem;
-  padding: 0 15px; 
+  padding: 0 15px;
   margin: auto;
 }
 
@@ -20,6 +20,20 @@
 
 .u-title {
   color: $darkBlue;
+}
+
+.u-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.u-info-alert {
+  display: block;
+  color: $black;
+  font-size: rem(11px);
+  line-height: rem(14);
+  padding: rem(5) rem(10) rem(0);
 }
 
 .u-bg-bright-cyan {

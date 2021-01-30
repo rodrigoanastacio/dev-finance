@@ -1,0 +1,18 @@
+.c-input-group {
+  margin-bottom: rem(15);
+
+  &__input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: rem(10) rem(15);
+    background-color: $lightGrayishBlue;
+    color: $grayishBlue;
+    border-radius: rem(4);
+    line-height: rem(20);
+  }
+
+  &.u-actions .c-button {
+    width: 48%;
+  }
+}

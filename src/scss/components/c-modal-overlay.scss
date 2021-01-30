@@ -1,0 +1,29 @@
+.c-modal-overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0 0.9375rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  visibility: visible;
+  transition: ease opacity 0.5s;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.c-modal {
+  background: $white;
+  padding: 1.5625rem 1.875rem;
+  width: 100%;
+  max-width: rem(500);
+}
+
+.has-active {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.5s;
+}
